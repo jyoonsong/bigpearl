@@ -8,7 +8,7 @@ button:focus {
   background-color: $button-background-focus;
 }
 
-label {
+label:not(.btn) {
   font-size: $label-font-size;
 }
 
