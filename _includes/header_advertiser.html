@@ -1,0 +1,50 @@
+<!-- Navigation -->
+<ul id="dropdownNav" class="dropdown-content">
+  <li><a href="#!">회원정보</a></li>
+  <li><a href="#!">메시지</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">로그아웃</a></li>
+</ul>
+<ul class="side-nav" id="mobileNav">
+  <li>
+    <a></a>
+    <a>
+      <img src="/assets/img/user.jpg" alt="user" class="user-img responsive-img circle" width="60">
+    </a>
+    <a>
+      <p class="grey-text thin">광고주 <strong>세일링스톤즈</strong>님</p>
+    </a>
+  </li>
+  <li class="divider"></li>
+  <li class="{% if page.url == 'request' %}active{% endif %}"><a href="request">의뢰하기</a></li>
+  <li class="{% if page.url == 'status' %}active{% endif %}"><a href="status">의뢰현황</a></li>
+  <!-- Dropdown -->
+  <li><a href="#!">회원정보</a></li>
+  <li><a href="#!">로그아웃</a></li>
+</ul>
+<header class="navbar-fixed">
+  <nav>
+    <div class="container">
+      <div class="row">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo left">
+            <img class="responsive-img" src="/assets/img/tmp_logo.png" alt="BigPearl">
+          </a>
+          <a href="#" data-activates="mobileNav" class="button-collapse">
+            <i class="menu-icon"><span></span></i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li class="active"><a href="#!">나의 브이로그 프로필</a></li>
+            <li><a href="help.html">브이로그를 수익화하는 방법</a></li>
+            <!-- Dropdown Trigger -->
+            <li>
+              <a class="dropdown-button" href="#!" data-activates="dropdownNav" data-beloworigin="true" data-hover="true">
+                <img src="{{ '/assets/img/user.jpg' | absolute_url }}" alt="user" class="user-img responsive-img circle">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'kr' }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header_vlogger.html %}
+    
+    {{ content }}
+    
+    {% include footer.html %}
+    
+    <!-- jQuery & Materialize -->
+    <script type="text/javascript" src="{{ '/assets/js/jquery-3.2.1.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/materialize.min.js' | relative_url }}"></script>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  </body>
+</html>

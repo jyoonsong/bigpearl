@@ -1,0 +1,51 @@
+/* Navbar */
+.brand-logo {
+  width: 3em;
+}
+
+/* Banner */
+.banner {
+  height: 200px;
+  max-height: 30vh;
+  background: top center $secondary-bg-color no-repeat;
+  background-image: url("#{$baseurl}/assets/img/banner_bg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: float-background 2s ease-in-out;
+  
+  h3 {
+    letter-spacing: -2px;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes float-background {
+  0% {
+    background-position-y: 100%;
+  }
+  100% {
+    background-position-y: 0;
+  }
+}
+
+/* Circular Process Bar */
+svg.pie {
+  max-width: 300px;
+  transform: rotate(-90deg);
+  fill: none;
+  circle {
+    stroke-width: 1;
+  }
+  .bar {
+    stroke-width: 7;
+    stroke-linecap: round;
+  }
+}
+
+.pie-text {
+  h3 {
+    margin: 10px 0 12px;
+  }
+}
