@@ -10,7 +10,6 @@ button:focus {
 
 label {
   font-size: $label-font-size;
-  @extend .grey-text
 }
 
 @import 'input-fields';

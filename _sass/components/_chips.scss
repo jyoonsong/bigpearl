@@ -1,16 +1,20 @@
 .chip {
   display: inline-block;
-  height: 32px;
+  height: 30px;
   font-size: 13px;
   font-weight: 500;
   color: rgba(0,0,0,.6);
-  line-height: 32px;
+  line-height: 30px;
   padding: 0 12px;
-  border-radius: 16px;
-  background-color: $chip-bg-color;
-  margin-bottom: $chip-margin;
-  margin-right: $chip-margin;
-
+  border-radius: 15px;
+  background-color: $primary-color;
+  margin-bottom: 6px;
+  margin-right: 8px;
+  
+  :nth-of-type(2n) {
+    background-color: $secondary-color;
+  }
+  
   > img {
     float: left;
     margin: 0 8px 0 -12px;
@@ -19,35 +23,48 @@
     border-radius: 50%;
   }
 
-  .close {
+  i {
     cursor: pointer;
     float: right;
-    font-size: 16px;
-    line-height: 32px;
-    padding-left: 8px;
+    line-height: 31px;
+    padding-left: 6px;
   }
 }
 
 .chips {
   border: none;
-  border-bottom: 1px solid $chip-border-color;
+  border: 1px solid $input-border-color;
   box-shadow: none;
   margin: $input-margin;
-  min-height: 45px;
+  padding: 0 1em;
   outline: none;
   transition: all .3s;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
 
   &.focus {
-    border-bottom: 1px solid $chip-selected-color;
-    box-shadow: 0 1px 0 0 $chip-selected-color;
+    border: 1px solid $input-focus-color;
   }
 
   &:hover {
     cursor: text;
   }
+  
+  // Invalid Input Style
+  &.invalid,
+  &:focus.invalid {
+    @extend %invalid-input-style;
+  }
+
+  // Custom Error message
+  &.invalid + label:after,
+  &:focus.invalid + label:after {
+    @extend %custom-error-message;
+  }
 
   .chip.selected {
-    background-color: $chip-selected-color;
+    background-color: $input-focus-color;
     color: #fff;
   }
 

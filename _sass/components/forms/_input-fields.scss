@@ -4,7 +4,7 @@
 /* Style Placeholders */
 
 ::placeholder {
-  color: $placeholder-text-color;
+  color: color("grey", "lighten-1");
 }
 
 /* Text inputs */
@@ -34,14 +34,13 @@ textarea.materialize-textarea {
   margin: $input-margin;
   padding: $input-padding;
   box-shadow: none;
-  box-sizing: content-box;
   transition: $input-transition;
 
   // Disabled input style
   &:disabled,
   &[readonly="readonly"] {
     color: $input-disabled-color;
-    border-bottom: $input-disabled-border;
+    border: $input-disabled-border;
   }
 
   // Disabled label style
@@ -52,8 +51,7 @@ textarea.materialize-textarea {
 
   // Focused input style
   &:focus:not([readonly]) {
-    border-bottom: 1px solid $input-focus-color;
-    box-shadow: 0 1px 0 0 $input-focus-color;
+    border: 1px solid $input-focus-color;
   }
 
   // Focused label style
@@ -110,12 +108,10 @@ textarea.materialize-textarea {
 
 /* Validation Sass Placeholders */
 %valid-input-style {
-  border-bottom: 1px solid $input-success-color;
-  box-shadow: 0 1px 0 0 $input-success-color;
+  border-color: $input-success-color;
 }
 %invalid-input-style {
-  border-bottom: $input-invalid-border;
-  box-shadow: 0 1px 0 0 $input-error-color;
+  border-color: $input-error-color;
 }
 %custom-success-message {
   content: attr(data-success);
@@ -157,7 +153,7 @@ textarea.materialize-textarea {
   // Gutter spacing
   &.col {
     label {
-      left: $gutter-width / 2;
+      left: 2em;
     }
 
     .prefix ~ label,
@@ -168,6 +164,7 @@ textarea.materialize-textarea {
 
   position: relative;
   margin-top: 1rem;
+  line-height: $input-height;
 
   label {
     position: absolute;
@@ -176,14 +173,15 @@ textarea.materialize-textarea {
     height: 100%;
     font-size: 1rem;
     cursor: text;
-    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, color .2s ease-out;
     transform-origin: 0% 100%;
     text-align: initial;
-    transform: translateY(12px);
+    transform: translateY(1px);
     pointer-events: none;
 
-    &:not(.label-icon).active {
-      transform: translateY(-20px) scale(.8);
+    &:not(.label-icon).active,
+    &.fixed-top {
+      transform: translateX(-1em) translateY(-34px) scale(.9);
       transform-origin: 0 0;
     }
   }
@@ -317,7 +315,7 @@ textarea {
   margin-bottom: $input-margin-bottom;
   display: block;
   opacity: 1;
-  position: static;
+  width: calc(100% - #{$gutter-width});
 
   li {
     .highlight { color: #444; }

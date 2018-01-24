@@ -9,6 +9,7 @@
 
 
 
+
 **How to Run**
 
 1. 터미널을 켠다.
@@ -19,16 +20,19 @@
 
 
 
+
 **Site Structure**
 
-- 비회원 - `_layouts/nonmember.html`
+- **비회원** `_layouts/nonmember.html`
   - 랜딩 - /
   - 인플루언서 가입 - /signup/vlogger
   - 광고주 가입 - /signup/advertiser
   - 로그인 - /signin
-- 광고주회원 - `_layouts/advertiser.html`
+  
+- **광고주회원** `_layouts/advertiser.html`
   - 의뢰하기 - /request
   - 의뢰현황 - /status
-- 브이로거회원 - `_layouts/vlogger.html`
+  
+- **브이로거회원** `_layouts/vlogger.html`
   - 내 브이로그 프로필 - /profile
   - 브이로그 수익화 방법 - /help 

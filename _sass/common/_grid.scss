@@ -19,7 +19,10 @@
 }
 
 .section {
-  margin: 4em 0 8em;
+  margin: 4em 0 6em;
+  @media #{$medium-and-down} {
+    margin-bottom: 3em;
+  }
 }
 
 

@@ -57,14 +57,14 @@ nav {
     .menu-icon span {
       display: inline-block;
       height: 2px;
-      background: $footer-bg-color;
+      background: $base-font-color;
       width: 20px;
       position: relative;
       top: -3px;
       &:before, &:after {
         content: "";
         height: 2px;
-        background: $footer-bg-color;
+        background: $base-font-color;
         width: 15px;
         display: inline-block;
         position: absolute;
@@ -141,7 +141,7 @@ nav {
           display: block;
           height: .15em;
           background: $primary-color-dark;
-          margin-top: -20px;
+          margin-top: -23px;
         }
       }
     }
