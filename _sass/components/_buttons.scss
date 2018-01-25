@@ -278,13 +278,83 @@ button.btn-floating {
   line-height: $button-large-height;
 }
 
+// Round button
+.btn-round {
+  border-radius: 42px;
+}
+
 // Block button
 .btn-block {
   display: block;
 }
 
 // Radio, Checkbox into Buttons
+.btn-radio:checked + label,
+.btn-checkbox:checked + label {
+  background: $secondary-color;
+}
+
+.btn-radio:not(:checked) + label,
+.btn-checkbox:not(:checked) + label {
+  box-shadow: none;
+  background: transparent;
+  border: 1px solid $secondary-bg-color;
+  color: $placeholder-color;
+  font-weight: 300;
+}
+
+.no-overflow {
+  overflow: hidden;
+  padding-top: 20px !important;
+  margin-top: -20px !important;
+}
+
 .btn-radio + label,
 .btn-checkbox + label {
-  
+  &.first {
+    overflow: visible;
+    background: color("purplepink", "darken-4");
+    &:before {
+      content: "1순위";
+      position: absolute;
+      top: -31px;
+      left: 0;
+      color: color("purplepink", "darken-4");
+      font-size: .85rem;
+    }
+  }
+  &.second {
+    overflow: visible;
+    background: color("purplepink", "darken-2");
+    &:before {
+      content: "2순위";
+      position: absolute;
+      top: -31px;
+      left: 0;
+      color: color("purplepink", "darken-2");
+      font-size: .85rem;
+    }
+  }
+  &.third {
+    overflow: visible;
+    background: color("purplepink", "lighten-1");
+    &:before {
+      content: "3순위";
+      position: absolute;
+      top: -31px;
+      left: 0;
+      color: color("purplepink", "lighten-1");
+      font-size: .85rem;
+    }
+  }
+  @media #{$small-and-down} {
+    margin: 1em 0;
+  }
+}
+
+.btn-field {
+  margin-top: 1rem;
+  @media #{$small-and-down} {
+    margin-top: .2rem;
+  }
 }

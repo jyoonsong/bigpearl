@@ -10,6 +10,7 @@ $(".button-collapse").sideNav();
  */
 
 $(document).ready(function(){
+  
   // Pie Chart
   (function() {
     $('.pie').find('.bar').each(function(i) {
@@ -30,6 +31,10 @@ $(document).ready(function(){
   }).call(this);
 
   // Autocomplete
+  var categoryLimit = 4,
+      ageLimit = 3,
+      ageOrder = [];
+  
   $('.chips').material_chip();
   $('.chips-autocomplete').material_chip({
     placeholder: '예: 뷰티',
@@ -50,11 +55,46 @@ $(document).ready(function(){
   });
   
   $("#category .input").on( "keyup", function() {
-    if ( $('.chip').length > 4 ) {
+    if ( $('.chip').length > categoryLimit ) {
       $('.chip')[4].remove();
     }
   });
   
+  $("input[name='age']").on('change', function(e) {
+    // 3개까지만
+    if ($("input[name='age']:checked").length > ageLimit) {
+      this.checked = false;
+    }
+    // 순서저장
+    if (this.checked) {
+      ageOrder.push(this.id);
+    }
+    else {
+      for (var i = 0; i < ageOrder.length; i++) {
+        if (ageOrder[i] == this.id) {
+            ageOrder.splice(i, 1);
+        }
+      }
+    }
+    // clear labels
+    $("input[name='age']").siblings("label").each(function (i, elem) {
+      elem.classList.remove("first", "second", "third");
+    });
+    // update labels
+    for (var i = 0; i < ageOrder.length; i++) {
+      console.log(ageOrder);
+      if (i == 0) {
+        $("#lb-"+ageOrder[i]).addClass("first");
+      }
+      if (i == 1) {
+        $("#lb-"+ageOrder[i]).addClass("second");
+      }
+      if (i == 2) {
+        $("#lb-"+ageOrder[i]).addClass("third");
+      }
+    }
+    // 순서 저장 보내기 -> 서버사이드
+  });
 });
 
 /*

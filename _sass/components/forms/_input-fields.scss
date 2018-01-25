@@ -4,7 +4,7 @@
 /* Style Placeholders */
 
 ::placeholder {
-  color: color("grey", "lighten-1");
+  color: $placeholder-color;
 }
 
 /* Text inputs */
@@ -179,8 +179,7 @@ textarea.materialize-textarea {
     transform: translateY(1px);
     pointer-events: none;
 
-    &:not(.label-icon).active,
-    &.fixed-top {
+    &:not(.label-icon).active {
       transform: translateX(-1em) translateY(-34px) scale(.9);
       transform-origin: 0 0;
     }
@@ -216,6 +215,7 @@ textarea.materialize-textarea {
   }
 
   @media #{$small-and-down} {
+    margin-top: .2rem;
     .prefix ~ input {
       width: 80%;
       width: calc(100% - 3rem);

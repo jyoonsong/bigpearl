@@ -152,6 +152,7 @@ $dropdown-item-height: 42px !default;
 // ==========================================================================
 
 // Text Inputs + Textarea
+$placeholder-color: color("grey", "lighten-1") !default;
 $input-height: 3rem !default;
 $input-border-color: $secondary-bg-color !default;
 $input-border: 1px solid $input-border-color !default;
@@ -164,7 +165,7 @@ $input-margin-bottom: 20px;
 $input-margin: 0 0 $input-margin-bottom 0 !default;
 $input-padding: 0 1em !default;
 $input-transition: all .3s !default;
-$label-font-size: .8em !default;
+$label-font-size: .9em !default;
 $input-disabled-color: rgba(0,0,0, .42) !default;
 $input-disabled-solid-color: #949494 !default;
 $input-disabled-border: 1px dotted $input-disabled-color !default;

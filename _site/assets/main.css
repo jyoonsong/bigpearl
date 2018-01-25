@@ -1154,7 +1154,8 @@ small {
     width: 70%; } }
 .container .row {
   margin-left: -0.75rem;
-  margin-right: -0.75rem; }
+  margin-right: -0.75rem;
+  margin-bottom: 1.5rem; }
 
 .section {
   margin: 4em 0 6em; }
@@ -2412,8 +2413,75 @@ button.btn-floating {
   height: 50.4px;
   line-height: 50.4px; }
 
+.btn-round {
+  border-radius: 42px; }
+
 .btn-block {
   display: block; }
+
+.btn-radio:checked + label,
+.btn-checkbox:checked + label {
+  background: #ea80fc; }
+
+.btn-radio:not(:checked) + label,
+.btn-checkbox:not(:checked) + label {
+  box-shadow: none;
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  color: #bdbdbd;
+  font-weight: 300; }
+
+.no-overflow {
+  overflow: hidden;
+  padding-top: 20px !important;
+  margin-top: -20px !important; }
+
+.btn-radio + label.first,
+.btn-checkbox + label.first {
+  overflow: visible;
+  background: #4a148c; }
+  .btn-radio + label.first:before,
+  .btn-checkbox + label.first:before {
+    content: "1순위";
+    position: absolute;
+    top: -31px;
+    left: 0;
+    color: #4a148c;
+    font-size: .85rem; }
+.btn-radio + label.second,
+.btn-checkbox + label.second {
+  overflow: visible;
+  background: #7b1fa2; }
+  .btn-radio + label.second:before,
+  .btn-checkbox + label.second:before {
+    content: "2순위";
+    position: absolute;
+    top: -31px;
+    left: 0;
+    color: #7b1fa2;
+    font-size: .85rem; }
+.btn-radio + label.third,
+.btn-checkbox + label.third {
+  overflow: visible;
+  background: #ab47bc; }
+  .btn-radio + label.third:before,
+  .btn-checkbox + label.third:before {
+    content: "3순위";
+    position: absolute;
+    top: -31px;
+    left: 0;
+    color: #ab47bc;
+    font-size: .85rem; }
+@media only screen and (max-width: 575px) {
+  .btn-radio + label,
+  .btn-checkbox + label {
+    margin: 1em 0; } }
+
+.btn-field {
+  margin-top: 1rem; }
+  @media only screen and (max-width: 575px) {
+    .btn-field {
+      margin-top: .2rem; } }
 
 .dropdown-content {
   background-color: #fff;
@@ -2749,8 +2817,17 @@ button:focus {
   outline: none;
   background-color: #14ffff; }
 
-label:not(.btn):not(.btn-large) {
-  font-size: 0.8em; }
+label {
+  font-size: 0.9em; }
+
+.label-field {
+  margin-top: 1rem;
+  font-size: .85em;
+  height: 42px;
+  line-height: 2.4; }
+  @media only screen and (min-width: 768px) {
+    .label-field {
+      text-align: right; } }
 
 /* Text Inputs + Textarea
    ========================================================================== */
@@ -3095,7 +3172,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
     text-align: initial;
     transform: translateY(1px);
     pointer-events: none; }
-    .input-field label:not(.label-icon).active, .input-field label.fixed-top {
+    .input-field label:not(.label-icon).active {
       transform: translateX(-1em) translateY(-34px) scale(0.9);
       transform-origin: 0 0; }
   .input-field .prefix {
@@ -3120,9 +3197,11 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
       width: 86%;
       width: calc(100% - 3rem); } }
   @media only screen and (max-width: 575px) {
-    .input-field .prefix ~ input {
-      width: 80%;
-      width: calc(100% - 3rem); } }
+    .input-field {
+      margin-top: .2rem; }
+      .input-field .prefix ~ input {
+        width: 80%;
+        width: calc(100% - 3rem); } }
 
 /* Search Field */
 .input-field input[type=search] {
@@ -3278,9 +3357,6 @@ textarea {
 /* Checkboxes
    ========================================================================== */
 /* CUSTOM CSS CHECKBOXES */
-form .checkbox-field {
-  margin-top: 1rem; }
-
 /* Remove default checkbox */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
@@ -3504,7 +3580,7 @@ select {
   .select-wrapper + label {
     position: absolute;
     top: -26px;
-    font-size: 0.8em; }
+    font-size: 0.9em; }
 
 select:disabled {
   color: rgba(0, 0, 0, 0.42); }

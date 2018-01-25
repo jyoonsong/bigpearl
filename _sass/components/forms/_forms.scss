@@ -8,8 +8,18 @@ button:focus {
   background-color: $button-background-focus;
 }
 
-label:not(.btn) {
+label {
   font-size: $label-font-size;
+}
+
+.label-field {
+  margin-top: 1rem;
+  font-size: .85em;
+  height: 42px;
+  line-height: 2.4;
+  @media #{$large-and-up} {
+    text-align: right;
+  }
 }
 
 @import 'input-fields';
