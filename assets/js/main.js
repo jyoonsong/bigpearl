@@ -58,13 +58,8 @@ $(document).ready(function(){
 });
 
 /*
- *
+ * scroll effect
  */
-  var options = [
-    {selector: '.section', offset: 200, callback: function(el) {
-      Materialize.fadeInImage($(el));
-    }}
-  ];
-  Materialize.scrollFire(options);
+new WOW().init();
 
 

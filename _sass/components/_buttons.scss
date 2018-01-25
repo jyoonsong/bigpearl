@@ -282,3 +282,9 @@ button.btn-floating {
 .btn-block {
   display: block;
 }
+
+// Radio, Checkbox into Buttons
+.btn-radio + label,
+.btn-checkbox + label {
+  
+}

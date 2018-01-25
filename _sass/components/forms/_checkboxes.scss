@@ -2,13 +2,8 @@
    ========================================================================== */
 
 /* CUSTOM CSS CHECKBOXES */
-form p {
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-form p:last-child {
-  margin-bottom: 0;
+form .checkbox-field {
+  margin-top: 1rem;
 }
 
 /* Remove default checkbox */
@@ -20,7 +15,7 @@ form p:last-child {
 }
 
 // Checkbox Styles
-[type="checkbox"]:not(.btn-radio) {
+[type="checkbox"]:not(.btn-checkbox) {
   // Text Label Style
   + label {
     position: relative;
@@ -93,7 +88,7 @@ form p:last-child {
 }
 
 // Checked style
-[type="checkbox"]:not(.btn-radio):checked {
+[type="checkbox"]:not(.btn-checkbox):checked {
   + label:before {
     top: 2px;
     left: 1px;
@@ -121,7 +116,7 @@ form p:last-child {
 }
 
 // Unchecked style
-[type="checkbox"]:not(.btn-radio):not(:checked) {
+[type="checkbox"]:not(.btn-checkbox):not(:checked) {
   + label:before {
     width: 0;
     height: 0;
