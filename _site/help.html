@@ -103,10 +103,10 @@
     <!-- Banner -->
 <aside class="banner">
   <div class="container">
-    <div class="row">
+    <div class="row mb-0">
       <div class="col s12 offset-m2 m8 center">
-        <h3 class="thin fade-in black-text">브이로그를 <b>수익화</b>하는 법</h3>
-        <p class="light fade-in delay">나의 브이로그를 활용해 쉽게 돈 버는 방법</p>
+        <h3 class="thin fade-in black-text">나의 <b>브이로그</b> 프로필</h3>
+        <p class="light fade-in delay">잠재적 광고주에게 보여질 나의 정보를 확인하세요</p>
       </div>
     </div>
   </div>
@@ -148,7 +148,7 @@
           <div class="card">
             <div class="card-action">
               <b class="card-title"><i class="fa fa-bar-chart" aria-hidden="true"></i> 도달 예상</b>
-              <a class="btn-floating btn-large halfway-fab waves-effect waves-light cyan tooltipped" data-position="bottom" data-delay="50" data-tooltip="예상도달은 팔로워 수에 따른 어쩌구 저쩌구 수치입니다. 예상 도달을 늘리고 싶다면 '브이로그를 수익화하는 법'을 참고하세요.">
+              <a class="btn-floating btn-large halfway-fab waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="예상도달은 팔로워 수에 따른 어쩌구 저쩌구 수치입니다. 예상 도달을 늘리고 싶다면 '브이로그를 수익화하는 법'을 참고하세요.">
                 <i class="fa fa-info fa-lg" aria-hidden="true"></i>
               </a>
             </div>
@@ -175,9 +175,9 @@
       <!-- if 자격 미달 then 경고 -->
       <div class="row">
         <div class="col s12">
-          <div class="card cyan lighten-5 center">
+          <div class="card cyan lighten-5 center wow fade-in"  data-wow-offset="50">
             <div class="card-content black-text">
-              <p>
+              <p class="no-margin">
                 <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp; 아쉽게도 강미나 님의 브이로그는 아직 광고를 할 수 있는 힘이 없습니다.&nbsp;
                 <a class="black-text" href="help.html"><b><u>브이로그를 수익화하는 방법</u></b></a> 을 참고하시면 평균 1개월 뒤 광고를 수주하실 수 있을 거예요
               </p>
@@ -191,25 +191,82 @@
   <!-- else 자격 충족 then 우선 수주 신청 -->
   <section class="section">
     <div class="container">
-      <div class="heading center">
-        <h4 class="black-text mb-0">광고 우선 수주받기</h4>
-        <p class="grey-text">브이로그 특성에 대해서 조금 더 입력해주시면 광고주가 더 쉽게 브이로거님을 발견할 수 있습니다.</p>
-      </div>
       <div class="row">
         <div class="col s12">
           <div class="card">
             <div class="card-content">
-              <form>
-                <div class="input-field">
-                  <div class="col s12 m3">영상 컨텐츠 카테고리</div>
-                  <div class="col s12 m9">
-                    <input placeholder="예: 뷰티, 직장라이프, 음식탐방 등" id="category" type="text" class="validate">
-                  </div>
-                </div>
-              </form>
-              <div class="input-field">
-                <input type="text" id="autocomplete-input" class="autocomplete">
+              <div class="heading center">
+                <h4 class="black-text mb-0">광고 우선 수주받기</h4>
+                <p class="grey-text mb-0">브이로그 특성에 대해서 조금 더 입력해주시면 광고주가 더 쉽게 브이로거님을 발견할 수 있습니다.</p>
               </div>
+            </div>
+            <div class="card-content">
+              <div class="row">
+                <form id="vloggerProfile" class="col s12">
+                  <div class="row">
+                    <div class="label-field col s12 m4 l3 center-valign mt-0">
+                      <h6 class="no-margin">주요 시청자 연령대</h6>
+                      <p class="no-margin grey-text truncate">순서대로 1~3순위를 클릭해주세요</p>
+                    </div>
+                    <div class="btn-field col s12 m7 l8 no-padding mt-0">
+                      <div class="col s6 m6 l2 no-overflow">
+                        <input class="btn-checkbox" type="checkbox" id="ten" name="age">
+                        <label class="btn waves-effect waves-light col s12" id="lb-ten" for="ten">10대</label>
+                      </div>
+                      <div class="col s6 m6 l2 no-overflow">
+                        <input class="btn-checkbox" type="checkbox" id="twenty" name="age">
+                        <label class="btn waves-effect waves-light col s12" id="lb-twenty" for="twenty">20대</label>
+                      </div>
+                      <div class="col s6 m6 l2 no-overflow">
+                        <input class="btn-checkbox" type="checkbox" id="thirty" name="age">
+                        <label class="btn waves-effect waves-light col s12" id="lb-thirty" for="thirty">30대</label>
+                      </div>
+                      <div class="col s6 m6 l2 no-overflow">
+                        <input class="btn-checkbox" type="checkbox" id="fourty" name="age">
+                        <label class="btn waves-effect waves-light col s12" id="lb-fourty" for="fourty">40대</label>
+                      </div>
+                      <div class="col s6 m6 l3 no-overflow">
+                        <input class="btn-checkbox" type="checkbox" id="fifty" name="age">
+                        <label class="btn waves-effect waves-light col s12" id="lb-fifty" for="fifty">50대 이상</label>
+                      </div>
+                      <div class="hiddendiv">
+                        <input id="ageOrder" type="hidden" name="ageOrder">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="label-field col s12 m4 l3 center-valign">
+                      <h6 class="no-margin">주요 시청자 성별</h6>
+                      <p class="no-margin grey-text truncate">주된 시청자 성별을 클릭하세요</p>
+                    </div>
+                    <div class="btn-field col s12 m7 l8 no-padding">
+                      <div class="col s6 m6 l2">
+                        <input class="btn-radio" type="radio" id="female" name="gender">
+                        <label class="btn waves-effect waves-light col s12" for="female">여성</label>
+                      </div>
+                      <div class="col s6 m6 l2">
+                        <input class="btn-radio" type="radio" id="male" name="gender">
+                        <label class="btn waves-effect waves-light col s12" for="male">남성</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-0">
+                    <div class="label-field col s12 m4 l3 center-valign">
+                      <h6 class="no-margin truncate">영상 컨텐츠 카테고리</h6>
+                      <p class="no-margin grey-text truncate">엔터키로 구분해주세요</p>
+                    </div>
+                    <div class="input-field col s12 m7 l8">
+                      <div id="category" class="chips chips-autocomplete"></div>
+                    </div>
+                  </div>
+                  <div class="row mb-0">
+                    <div class="input-field col s12 m7 offset-m4 l8 offset-l3">
+                      <button class="btn btn-round waves-effect waves-light right" type="submit" name="action">저장하기</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <br>
             </div>
           </div>
         </div>
