@@ -5,7 +5,7 @@
 | **ssProject**                 | Base                                     | 기본 틀 <br />(nav, footer, modal) |                     | 0                     |
 |                               | Home                                     | 랜딩                              |                     | 일단 마크업만<br />완성은 Last |
 |                               | *Extend*                                 | ?                               |                     |                       |
-| **Accounts**                  | **Reg-choice**                           | 선택 페이지?                         |                     |                       |
+| **Accounts**                  | ~~Reg-choice~~                           | 선택 페이지?                         |                     | X                     |
 |                               | Inf-reg                                  | 가입 페이지                          | C                   |                       |
 |                               | ~~Inf-reg-suc~~                          | 유튜브 연동 페이지(accounts?)           |                     |                       |
 |                               | Inf-acc                                  | 정보 페이지<br />(정보 수정 버튼, 탈퇴 버튼)   | R                   |                       |
