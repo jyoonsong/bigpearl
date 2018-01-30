@@ -22,9 +22,9 @@
 |                               | **Request**                              | 의뢰 페이지                          | C                   |                       |
 |                               | **Status**                               | 현황 페이지                          | R?                  |                       |
 |                               | **Status_read**<br />**Status_update**<br />**Status_delete** | ?                               | R? <br />U?<br />D? |                       |
-| **Influencer**                | Base                                     | 공통분모                            |                     |                       |
-|                               | **Connect**                              | 유튜브 연동 페이지                      |                     |                       |
-|                               | **Profile_create**<br />**Profile_update** | 내 브이로그 정보 입력/수정 페이지             | C/U                 | 완료                    |
-|                               | **Profile**                              | 내 브이로그 정보 페이지                   | R                   |                       |
-|                               | **Monetize**                             | 수익화 방법 소개 페이지                   |                     | 후순위(static)           |
+| **Influencer**                | Layout                                   | 공통분모                            |                     |                       |
+|                               | **Connect_youtube**                      | 유튜브 연동 페이지                      |                     |                       |
+|                               | **Vlog_info_create**<br />**Vlog_info_update** | 내 브이로그 정보 입력/수정 페이지             | C/U                 | 완료                    |
+|                               | **Vlog_info**                            | 내 브이로그 정보 페이지                   | R                   |                       |
+|                               | **Vlog_monetize**                        | 수익화 방법 소개 페이지                   |                     | 후순위(static)           |
 
