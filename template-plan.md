@@ -1,5 +1,6 @@
 ### Template List
 
+<<<<<<< HEAD
 | APP                           | TEMPLATE          | DESCRIPTION                     | CRUD | PRIORITY             |
 | ----------------------------- | ----------------- | ------------------------------- | ---- | -------------------- |
 | **ssProject**                 | Layout            | 기본 틀 <br />(nav, footer, modal) |      | 0                    |
@@ -21,4 +22,3 @@
 |                               | Vlog_info_create  | 내 브이로그 정보 입력 페이지                | C    | 3                    |
 |                               | Vlog_info         | 내 브이로그 정보 페이지                   | R    | 3                    |
 |                               | Vlog_monetize     | 수익화 방법 소개 페이지                   |      | 후순위(static)          |
-
