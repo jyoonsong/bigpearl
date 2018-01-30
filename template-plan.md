@@ -14,10 +14,10 @@
 |                               | ~~Com-reg-suc~~                          | 의뢰 페이지(accounts?)               |                     |                       |
 |                               | Com-acc                                  | 정보 페이지<br />(정보 수정 버튼, 탈퇴 버튼)   | R                   |                       |
 |                               | **Com-acc-update**                       | 정보 수정 페이지                       | U                   |                       |
-| **Modal**<br />(partial view) | **Find-password**                        | **논의사항**<br />비번 찾기 페이지         |                     |                       |
-|                               | **Terms-of-service**                     | 개인정보처리방침/이용약관                   |                     |                       |
-|                               | **Login**                                | **논의사항**                        |                     |                       |
-|                               | **Reg-suc**                              | 가입정보최종확인                        |                     |                       |
+| **Modal**<br />(partial view) | **Find-password**                        | **논의사항**<br />비번 찾기 페이지         |                     | 후순위                   |
+|                               | **Terms-of-service**                     | 개인정보처리방침/이용약관                   |                     | 후순위                   |
+|                               | **Login**                                | **논의사항**                        |                     | 후순위                   |
+|                               | **Reg-suc**                              | 가입정보최종확인                        |                     | 후순위                   |
 | **Company**                   | Base                                     | 공통분모                            |                     |                       |
 |                               | **Request**                              | 의뢰 페이지                          | C                   |                       |
 |                               | **Status**                               | 현황 페이지                          | R?                  |                       |
