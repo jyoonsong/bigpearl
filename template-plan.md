@@ -4,10 +4,10 @@
 | ----------------------------- | -------------------------------------- | ------------------------------- | ---- | -------------------- |
 | **ssProject**                 | Base                                   | 기본 틀 <br />(nav, footer, modal) |      | 0                    |
 |                               | Home                                   | 랜딩                              |      | 일단 마크업만<br />완성은 후순위 |
-| **Accounts**                  | Inf-registeration                      | 가입 페이지                          | C    | 1                    |
-|                               | Inf-account                            | 정보 확인 겸 수정 페이지                  | R/U  | 1                    |
-|                               | Com-registeration                      | 가입 페이지                          | C    | 1                    |
-|                               | Com-account                            | 정보 확인 겸 수정 페이지                  | R/U  | 1                    |
+| **Accounts**                  | Inf_registeration                      | 가입 페이지                          | C    | 1                    |
+|                               | Inf_account                            | 정보 확인 겸 수정 페이지                  | R/U  | 1                    |
+|                               | Com_registeration                      | 가입 페이지                          | C    | 1                    |
+|                               | Com_account                            | 정보 확인 겸 수정 페이지                  | R/U  | 1                    |
 |                               | Login                                  | 로그인 페이지                         |      | 1                    |
 | **Modal**<br />(partial view) | _terms_of_service                      | 개인정보처리방침/이용약관                   |      | 후순위                  |
 |                               | _find_password                         | 비번 찾기 페이지                       |      | 후순위                  |
