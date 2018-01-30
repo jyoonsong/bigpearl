@@ -3,8 +3,7 @@
 | APP                           | TEMPLATE                                 | DESCRIPTION                     | CRUD                | PRIORITY              |
 | ----------------------------- | ---------------------------------------- | ------------------------------- | ------------------- | --------------------- |
 | **ssProject**                 | Base                                     | 기본 틀 <br />(nav, footer, modal) |                     | 0                     |
-|                               | Home                                     | 랜딩                              |                     | 일단 마크업만<br />완성은 Last |
-|                               | *Extend*                                 | ?                               |                     |                       |
+|                               | Home                                     | 랜딩                              |                     | 일단 마크업만<br />완성은 Last |                  |                       |
 | **Accounts**                  | **Reg-choice**                           | 선택 페이지?                         |                     |                       |
 |                               | Inf-reg                                  | 가입 페이지                          | C                   |                       |
 |                               | ~~Inf-reg-suc~~                          | 유튜브 연동 페이지(accounts?)           |                     |                       |
