@@ -1,6 +1,5 @@
 ### Template List
 
-<<<<<<< HEAD
 | APP                           | TEMPLATE          | DESCRIPTION                     | CRUD | PRIORITY             |
 | ----------------------------- | ----------------- | ------------------------------- | ---- | -------------------- |
 | **ssProject**                 | Layout            | 기본 틀 <br />(nav, footer, modal) |      | 0                    |
